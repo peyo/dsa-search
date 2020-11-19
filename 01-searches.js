@@ -21,10 +21,15 @@ function search(array, find) {
     return `No array.`;
   }
 
-  if (array.length < 3 && array[0] !== find && array[1] !== find && array[2] !== find) {
+  if (
+    array.length < 3 &&
+    array[0] !== find &&
+    array[1] !== find &&
+    array[2] !== find
+  ) {
     return `Value not found.`;
   }
-   
+
   let i = Math.floor(array.length / 2);
   if (array[i] == find) {
     return `Value found.`;
@@ -39,4 +44,4 @@ function search(array, find) {
 
 let array = [3, 5, 6, 8, 11, 12, 14, 15, 17];
 let find = 3;
-console.log(search(array, find))
+console.log(search(array, find));
