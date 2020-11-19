@@ -63,6 +63,7 @@ class BinarySearchTree {
     }
   }
 
+
   inorder(node) {
     if (node !== null) {
       this.inorder(node.left);
@@ -108,8 +109,10 @@ let root = BST.getRootNode();
 console.log("inorder traversal");
 BST.inorder(root);
 
+/*
 console.log("preorder traversal");
 BST.preorder(root);
 
 console.log("postorder traversal");
 BST.postorder(root);
+*/
